@@ -50,7 +50,7 @@
 | 📦⛏️ **BOXMINE HOST** | *Activar en BoxMine Host* |[ver](https://github.com/GataNina-Li/GataBot-MD#%EF%B8%8F-boxmine-host) |
 | 🟣 **HEROKU** | *Instalación directa por Heroku* |[ver](https://github.com/GataNina-Li/GataBot-MD/#-activar-en-heroku) |
 | ⚡ **REPLIT** | *Instalación directa por Replit* |[ver](https://github.com/GataNina-Li/GataBot-MD/#-replit---gatabot) |
-| ⏏️ **KOYEB** | *Instalación directa por Koyeb* |[ver](https://github.com/GataNina-Li/GataBot-MD/#-activar-en-koyeb) |
+| ⏏️ **KOYEB** | *Instalación directa por Koyeb* |[ver](https://github.com/kimaistro/GataBot-MD/#-activar-en-koyeb) |
 | 💻 **WINDOWS** | *Instalar para Windows 10 o 11* |[ver](https://github.com/GataNina-Li/GataBot-MD/#-para-usuarios-de-windowsvpsrdp) |
 | 👥 **DISTRIBUIDORES AUTORIZADOS** | *Usuarios con Licencia GataBot* |[ver](https://github.com/GataNina-Li/GataBot-MD#distribuidores-autorizados-o-resellers---preguntas) |
 | 🐈 **SOBRE GATABOT** | *Política* |[ver](https://github.com/GataNina-Li/GataBot-MD/blob/master/terms.md) |
