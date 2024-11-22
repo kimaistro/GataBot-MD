@@ -5,7 +5,13 @@ let handler = m => m
 handler.all = async function (m) {
 let chat = global.db.data.chats[m.chat]
 let name = conn.getName(m.sender)
+m.isBot = m.id.startsWith('BAE5') && m.id.length === 16 || m.id.startsWith('3EB0') && m.id.length === 12 || m.id.startsWith('3EB0') && (m.id.length === 20 || m.id.length === 22) || m.id.startsWith('B24E') && m.id.length === 20;
+if (m.isBot) return 
 if (chat.isBanned) return
+if (m.isBot || m.sender.includes('bot') || m.sender.includes('Bot')) {
+return true; 
+}
+ 
 let vn = 'https://qu.ax/Ocxm.mp3'
 let bot = `${pickRandom([`*¡𝑬𝒚! 𝑨𝒒𝒖í 𝒆𝒔𝒕𝒐𝒚. 𝒀𝒐 𝒑𝒖𝒆𝒅𝒐 𝒂𝒚𝒖𝒅𝒂𝒓 👉👈 𝑯𝒆𝒚! 𝑰'𝒎 𝒉𝒆𝒓𝒆. 𝑰 𝒄𝒂𝒏 𝒉𝒆𝒍𝒑 🙌*`, `Aqui estoy | Here I am 😼`, `*Hola Aqui estoy yo puedo ayudar? | Hello, here I am, can I help? 😸*`])}`.trim()
 let txt = `*¿Tu Nokia es muy lento y necesitas que tu bot esté activo 24/7?* 📱⏳
@@ -17,25 +23,26 @@ let txt = `*¿Tu Nokia es muy lento y necesitas que tu bot esté activo 24/7?* �
 🟢 \`\`\`Información del Host\`\`\`
 
 💻 *Página:*
-https://dash.corinplus.com
+https://dash.skyultraplus.com
 
 *🟢 Dashboard:*
-https://dash.corinplus.com
+https://dash.skyultraplus.com
 
 ⚙️ *Panel*
-https://panel.corinplus.com
+https://panel.skyultraplus.com
 
 💥 *Comunidad de WhatsApp:*
-https://chat.whatsapp.com/HR3OLhsuZPqCMImzuHcuON
+https://chat.whatsapp.com/KGPhTIfgOzZCMNqoc3R7OW
 
 *🟣 Discord:*
-https://discord.com/invite/bjKpRBtkHv
+https://discord.gg/zvKgtc2RBc
 
 🧡 *Canal de WhatsApp:*
 https://whatsapp.com/channel/0029VakUvreFHWpyWUr4Jr0g
 
 🗣📲 *Contacto:*
 • wa.me/5214531287294
+• wa.me/15167096032
 • wa.me/573147616444
 • https://www.facebook.com/elrebelde21
 
@@ -47,16 +54,16 @@ contextInfo:{
 forwardedNewsletterMessageInfo: { 
 newsletterJid: '120363301598733462@newsletter', 
 serverMessageId: '', 
-newsletterName: 'CorinPlus-Host ☁️' }, 
+newsletterName: 'Sky-Ultra-Plus ☁️' }, 
 forwardingScore: 9999999,
 isForwarded: true, 
 "externalAdReply": {
 "showAdAttribution": true,
 "containsAutoReply": true,
-title: `🤖 𝐂O𝐑𝐈𝐍𝐏𝐋𝐔𝐒-𝐇𝐎𝐒𝐓 🤖`,
+title: `🤖 𝐒𝐊𝐘𝐏𝐋𝐔𝐒-𝐇𝐎𝐒𝐓 🤖`,
 body: `¡El plus que necesitas!_`,
 "previewType": "PHOTO",
-thumbnailUrl: 'https://telegra.ph/file/551d3d544d7bc607fd337.jpg', 
+thumbnailUrl: 'https://qu.ax/wXciz.jpg', 
 sourceUrl: accountsgb}}},
 { quoted: fkontak})
 } 

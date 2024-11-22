@@ -14,7 +14,7 @@ await conn.sendPresenceUpdate('composing', m.chat)
 
 async function luminsesi(q, username, logic) {
 try {
-const response = await axios.post("https://lumin-ai.xyz/", {
+const response = await axios.post("https://luminai.my.id", {
 content: q,
 user: username,
 prompt: logic,
@@ -34,7 +34,7 @@ let result = await luminsesi(query, username, syms1);
  await m.reply(result)
 } catch {
 try {
-let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gptweb?text=${text}`) 
+let gpt = await fetch(`${apis}/ia/gptweb?text=${text}`) 
 let res = await gpt.json()
 await m.reply(res.gpt)
 /*let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/chatgpt?q=${text}`)
@@ -45,7 +45,7 @@ await m.reply(res.data)*/
 
 if (command == 'openai' || command == 'ia2' || command == 'chatgpt2') {
 conn.sendPresenceUpdate('composing', m.chat);
-let gpt = await fetch(`https://deliriusapi-official.vercel.app/ia/gptweb?text=${text}`) 
+let gpt = await fetch(`${apis}/ia/gptweb?text=${text}`) 
 let res = await gpt.json()
 await m.reply(res.gpt)
 }}
